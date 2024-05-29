@@ -1,0 +1,15 @@
+section.secao3{
+    color:blue;
+    margin: 70px;
+    font-size: 20px;
+    display: flex;
+    gap: 100px;
+    h4 {
+        color:black;
+    }
+    .grupo{
+        display: flex;
+        gap: 70px;
+    }
+}
+
