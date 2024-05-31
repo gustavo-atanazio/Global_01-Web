@@ -1,0 +1,43 @@
+.section1 {
+    h1 {
+        text-align: center;
+        margin: 25px 0;
+        color: #00F;
+    }
+
+    .container {
+        display: flex;
+        gap: 25px;
+        padding: 0 70px;
+
+        .texts {
+            max-width: 50%;
+            font-size: x-large;
+
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            a {
+                max-width: 60%;
+                font-size: medium;
+                text-align: center;
+                text-decoration: none;
+                color: #FFF;
+                background-color: #00F;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+                transition: transform 300ms;
+
+                &:hover { transform: scale(1.05); }
+            }
+        }
+
+        div > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+}
