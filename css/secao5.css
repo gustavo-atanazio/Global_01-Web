@@ -1,5 +1,6 @@
 .secao5 {
-    padding: 0 70px;
+    margin-bottom: 75px;
+    padding: 0 75px;
 
     h3 {
         color: #00F;
@@ -7,23 +8,25 @@
         margin-bottom: 25px;
     }
 
-    .a {
-        height: 600px;
+    .images {
+        height: 500px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        gap: 50px;
 
-        .b, .c, .d {
+        .image_1, .image_2, .image_3 {
             width: 400px;
-            height: 400px;
+            height: 100%;
             position: relative;
 
             border-radius: 15px;
-            margin: 15px;
-            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
             p {
                 width: 50%;
-                height: 50%;
+                height: 35%;
     
                 display: flex;
                 align-items: center;
@@ -32,26 +35,45 @@
                 background-color: #00F;
                 color: #FFF;
                 border-radius: 10px;
+                text-align: center;
     
                 position: absolute;
-                top: 75%;
+                top: 70%;
                 left: 25%; 
             }
         }
 
-        .b {
+        .image_1 {
             background-image: url("https://t.ctcdn.com.br/1EqFajKNkubKRqKbjMOvhFEnHKU=/825x464/smart/i265302.jpeg");
-            background-position: 75% 100%;
         }
 
-        .c {
+        .image_2 {
             background-image: url("https://worldvision.org.ni/wp-content/uploads/2021/02/agua-purificada-sobre-wv.jpg");
-            background-size: 400px 400px;
         }
 
-        .d {
+        .image_3 {
             background-image: url("https://s2-umsoplaneta.glbimg.com/kVLU8916h3_W0zRIY9-UvEyKrKc=/0x0:1170x530/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_7d5b9b5029304d27b7ef8a7f28b4d70f/internal_photos/bs/2022/N/L/KRdTTIQqysRqERAIqVJw/image1170x530cropped.jpg");
-            background-size: 400px 400px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 25px;
+
+        .images {
+            flex-direction: column;
+            gap: 25px;
+
+            .image_1, .image_2, .image_3 {
+                width: 100%;
+                margin: 0;
+
+                p {
+                    width: 60%;
+                    height: auto;
+                    position: unset;
+                    padding: 0;
+                }
+            }
         }
     }
 }

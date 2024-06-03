@@ -1,4 +1,6 @@
 .section1 {
+    margin-bottom: 75px;
+
     h1 {
         text-align: center;
         margin: 25px 0;
@@ -38,6 +40,15 @@
             width: 100%;
             height: 100%;
             border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 0 25px;
+            flex-direction: column;
+
+            .texts { max-width: 100%; }
+
+            a { align-self: center; }
         }
     }
 }

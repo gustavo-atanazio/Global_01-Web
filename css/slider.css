@@ -18,6 +18,7 @@
                 height: 100%;
                 width: 100%;
                 filter: brightness(0.5);
+                image-rendering: optimizeQuality;
             }
 
             &:first-child {
@@ -30,6 +31,10 @@
                 top: 30%;
                 font-size: 100px;
                 padding-left: 75px;
+
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
             }
         }
     }

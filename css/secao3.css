@@ -1,15 +1,26 @@
-section.secao3{
-    color:blue;
-    margin: 70px;
-    font-size: 20px;
+.secao3 {
     display: flex;
     gap: 100px;
-    h4 {
-        color:black;
-    }
-    .grupo{
+
+    padding: 0 75px;
+    margin-bottom: 75px;
+
+    color: #00F;
+    font-size: 20px;
+
+    h4 { color:black; }
+
+    .grupo {
         display: flex;
         gap: 70px;
     }
-}
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 50px;
+
+        margin: 0 0 75px 0;
+        padding: 0 25px;
+        text-align: center;
+    }
+}
