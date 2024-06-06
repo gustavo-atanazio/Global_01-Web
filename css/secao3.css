@@ -1,18 +1,33 @@
 .secao3 {
     display: flex;
-    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 
     padding: 0 75px;
     margin-bottom: 75px;
 
+    text-align: center;
     color: #00F;
     font-size: 20px;
 
     h4 { color:black; }
 
+    .img_container {
+        width: 60%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+
     .grupo {
         display: flex;
-        gap: 70px;
+        gap: 100px;
+
+        .material-symbols-outlined { font-size: 80px; }
     }
 
     @media (max-width: 768px) {
@@ -22,5 +37,7 @@
         margin: 0 0 75px 0;
         padding: 0 25px;
         text-align: center;
+
+        .img_container { width: 100%; }
     }
 }
